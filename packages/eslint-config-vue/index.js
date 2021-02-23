@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   parser: 'vue-eslint-parser',
   extends: [
     'plugin:vue/vue3-recommended',
@@ -8,23 +8,29 @@ export default {
   ],
   rules: {
     'vue/html-indent': [ 'error', 2 ],
-    'vue/component-tags-order': ['error', { order: [ 'script', 'template', 'style' ] }],
+    'vue/component-tags-order': [ 'error', { order: [ 'script', 'template', 'style' ] } ],
     'vue/html-quotes': [ 'error', 'single', { avoidEscape: true } ],
-    'vue/html-self-closing': [ 'error', {
-      html: {
-        void: 'never',
-        normal: 'any',
-        component: 'any',
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'never',
+          normal: 'any',
+          component: 'any',
+        },
+        svg: 'always',
+        math: 'always',
       },
-      svg: 'always',
-      math: 'always',
-    } ],
-    'vue/max-attributes-per-line': [ 'error', {
-      singleline: 3,
-      multiline: {
-        max: 1,
-        allowFirstLine: false,
+    ],
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 3,
+        multiline: {
+          max: 1,
+          allowFirstLine: false,
+        },
       },
-    } ],
+    ],
   },
 }
