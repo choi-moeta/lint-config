@@ -98,7 +98,7 @@ module.exports = {
     'vars-on-top': 'error',
     'require-await': 'off',
     'no-return-assign': 'off',
-    'operator-linebreak': [2, 'before'],
+    'operator-linebreak': ['error', 'before'],
 
     // unicorns
     // Pass error message when throwing errors
