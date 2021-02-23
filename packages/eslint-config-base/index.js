@@ -88,7 +88,7 @@ module.exports = {
     'consistent-return': 'off',
     complexity: ['off', 11],
     eqeqeq: ['error', 'allow-null'],
-    'no-alert': 'warn',
+    'no-alert': 'off',
     'no-case-declarations': 'error',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
