@@ -1,6 +1,10 @@
 {
   "name": "@moeta/lint-config-monorepo",
-  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choi-moeta/lint-config.git"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }
